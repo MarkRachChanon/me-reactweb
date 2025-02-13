@@ -6,4 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react()],
   base: "/", // ตั้งค่า Base URL ให้เป็น root
+  server: {
+    historyApiFallback: true, // ให้ Dev Server รองรับ History API
+  },
 })
