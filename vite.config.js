@@ -5,4 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "/", // ตั้งค่า Base URL ให้เป็น root
 })
